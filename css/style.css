@@ -1,7 +1,16 @@
+
+/*Safariだけに適用される新型CSSハック*/
+_::-webkit-full-page-media, _:future, :root .css_selector {
+position: absolute;
+top: 15px;
+text-align: center;
+}
 body{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     
     background-color: rgb(255, 255, 255);
+
+    -webkit-text-size-adjust: 100%;
 }
 
 button{
@@ -41,10 +50,30 @@ video{
     
 }
 #video_div{
-    height: 80vh;
+    height: 70vh;
 }
-@media (max-width: 767px) { 
+
+.box_video{
+    height: 70vh;
+}
+
+/* スマホよう */
+@media screen and (max-width: 767px) { 
     #video_div{
-        height: auto;
+        height: 30vh;
     }
+    .box_video{
+        height: 57vh;
+    }
+
+    video{
+        width: 100%; 
+        height:100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        background-color: black;
+        
+    }
+
+
 }
