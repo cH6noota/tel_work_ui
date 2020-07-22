@@ -57,6 +57,16 @@ video{
     height: 70vh;
 }
 
+#bar{
+    text-align: right;
+}
+
+#bar button{
+    margin-top: 20px;
+    padding: 6px 20px 6px 20px;
+    background-color: rgb(59, 59, 59);
+}
+
 /* スマホよう */
 @media screen and (max-width: 767px) { 
     #video_div{
